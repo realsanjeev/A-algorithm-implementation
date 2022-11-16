@@ -1,6 +1,6 @@
 
-  var cols = 10;
-  var rows = 5;
+  var cols = 25;
+  var rows = 25;
   
   // This will be the 2D array
   var grid = new Array(cols);
