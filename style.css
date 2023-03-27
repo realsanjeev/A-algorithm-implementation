@@ -1,14 +1,19 @@
+/* Set margin and padding to 0 for body element */
 html, body {
-    margin: 0;
-    padding: 0;
-  }
-  canvas {
-    display: block;
-  }
+  margin: 0;
+  padding: 0;
+}
+
+/* Make canvas element a block-level element */
+canvas {
+  display: block;
+}
+
+/* Style container with dark slate gray background, bold font weight, light blue text color, centered text, and slight padding */
 .container{
   background-color: darkslategray;
   font-weight: bold;
   color: aliceblue;
   text-align: center;
   padding: 0.5px;
-}  
+}
