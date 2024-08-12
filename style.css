@@ -10,10 +10,31 @@ canvas {
 }
 
 /* Style container with dark slate gray background, bold font weight, light blue text color, centered text, and slight padding */
-.container{
+.container {
   background-color: darkslategray;
   font-weight: bold;
   color: aliceblue;
   text-align: center;
-  padding: 0.5px;
+  padding: 0.5em;
+}
+
+/* Style for the refresh button */
+button {
+  background-color: #4CAF50; /* Green background */
+  border: none; /* Remove default border */
+  color: white; /* White text color */
+  padding: 10px 20px; /* Add padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline from text */
+  display: inline-block; /* Make it inline block element */
+  font-size: 16px; /* Increase font size */
+  margin: 10px; /* Add margin around button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Style for the refresh button on hover */
+button:hover {
+  background-color: #45a049; /* Darker green background on hover */
 }

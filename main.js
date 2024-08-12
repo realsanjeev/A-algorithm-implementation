@@ -17,7 +17,7 @@ var w, h;
 var path = [];
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(600, 600);
   background(50);
   console.log('A* ALgorithm Initiated');
 
@@ -53,6 +53,7 @@ function setup() {
   // openSet starts with beginning only
   openSet.push(start);
 }
+
 // Function to delete element from the array
 function removeFromArray(arr, elt) {
   // Could use indexOf here instead to be more efficient
@@ -62,6 +63,7 @@ function removeFromArray(arr, elt) {
     }
   }
 }
+
 function node(i, j) {
   this.i = i;
   this.j = j;
@@ -90,7 +92,7 @@ function node(i, j) {
       ellipse(this.i * w + w / 2, this.j * h + h / 2, w / 2, h / 2);
     } else if (col) {
       fill(col);
-      console.log(col);
+      // console.log(col);
       rect(this.i * w, this.j * h, w, h);
     }
   }
@@ -148,6 +150,7 @@ function draw() {
     // Did I finish?
     if (current === end) {
       noLoop();
+      displayResult("Path to End Sucessfully Found");
       console.log("DONE!");
     }
 
@@ -189,6 +192,7 @@ function draw() {
     // Uh oh, no solution
   } else {
     console.log('no solution');
+    displayResult("No Path Found to End");
     noLoop();
     return;
   }
@@ -234,4 +238,9 @@ function draw() {
     vertex(path[i].i * w + w / 2, path[i].j * h + h / 2);
   }
   endShape();
+}
+
+function displayResult(result) {
+  const resultContainer = document.getElementById('result-container');
+  resultContainer.innerHTML = `<h2>${result}</p>`;
 }

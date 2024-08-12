@@ -1,8 +1,13 @@
 # A* Algorithm
-This code implements the A* algorithm in JavaScript using p5.js, a JavaScript library for creating graphics and animations. The algorithm finds the shortest path between a start and end point on a 2D grid, taking into account the terrain (walls) between them.
+This code implements the $A^*$ algorithm in JavaScript using `p5.js`, a JavaScript library for creating graphics and animations. The algorithm finds the shortest path between a start and end point on a 2D grid, taking into account the terrain (walls) between them.
+
+**References**
+- [p5.js - Github](https://github.com/processing/p5.js)
+- [p5.js - Official website](https://p5js.org/tutorials/)
+- [Understanding the A-star Algorithm](https://www.redblobgames.com/pathfinding/a-star/introduction.html)
 
 ## Algorithm
-The A* algorithm can be described in a more mathematical form as follows:
+The $A^*$ algorithm can be described in a more mathematical form as follows:
 
 Given:
 - $ G $: Graph representing the environment
