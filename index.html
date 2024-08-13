@@ -4,24 +4,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Implementation of A* Algorithm</title>
+  <title>A* Pathfinding Visualization</title>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="https://raw.githubusercontent.com/realsanjeev/A-algorithm-implementation/gh-pages/Images/icon.ico" type="image/x-icon" /> 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js"></script>
 </head>
 <body>
   <div class="container">
-    <h1>Implementation of A* Algorithm</h1>
+    <h1>A* Pathfinding Visualization</h1>
+    <div class="controls">
+      <button id="start-btn">Start</button>
+      <button id="reset-btn">Reset Path</button>
+      <button id="clear-btn">Clear Walls</button>
+      <button id="random-btn">Randomize Walls</button>
+    </div>
+    <div id="status-message">Draw walls by clicking and dragging. Press Start to begin.</div>
   </div>
-  <button onclick="refreshPage()">Refresh Page</button>
-  <div id="grid-container" class="grid"></div>
-  <div id="result-container"></div> <!-- Container to display A* results -->
-  <script src="main.js"></script>
   
-  <script>
-    function refreshPage() {
-      window.location.reload();
-    }
-  </script>
+  <div id="canvas-container"></div>
+  
+  <script src="main.js"></script>
 </body>
 </html>

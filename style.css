@@ -1,40 +1,93 @@
-/* Set margin and padding to 0 for body element */
+/* Reset and Base Styles */
 html, body {
   margin: 0;
   padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
-/* Make canvas element a block-level element */
+/* Container Styles */
+.container {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #34495e;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+h1 {
+  margin: 0 0 15px 0;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* Controls Styles */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #27ae60;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+button:hover {
+  background-color: #2ecc71;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+#reset-btn { background-color: #e67e22; }
+#reset-btn:hover { background-color: #d35400; }
+
+#clear-btn { background-color: #c0392b; }
+#clear-btn:hover { background-color: #e74c3c; }
+
+#random-btn { background-color: #8e44ad; }
+#random-btn:hover { background-color: #9b59b6; }
+
+/* Status Message */
+#status-message {
+  margin-top: 10px;
+  font-style: italic;
+  color: #bdc3c7;
+  min-height: 1.2em;
+}
+
+/* Canvas Container */
+#canvas-container {
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
 canvas {
   display: block;
-}
-
-/* Style container with dark slate gray background, bold font weight, light blue text color, centered text, and slight padding */
-.container {
-  background-color: darkslategray;
-  font-weight: bold;
-  color: aliceblue;
-  text-align: center;
-  padding: 0.5em;
-}
-
-/* Style for the refresh button */
-button {
-  background-color: #4CAF50; /* Green background */
-  border: none; /* Remove default border */
-  color: white; /* White text color */
-  padding: 10px 20px; /* Add padding */
-  text-align: center; /* Center text */
-  text-decoration: none; /* Remove underline from text */
-  display: inline-block; /* Make it inline block element */
-  font-size: 16px; /* Increase font size */
-  margin: 10px; /* Add margin around button */
-  cursor: pointer; /* Change cursor to pointer on hover */
-  border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.3s ease; /* Smooth background color transition */
-}
-
-/* Style for the refresh button on hover */
-button:hover {
-  background-color: #45a049; /* Darker green background on hover */
 }
